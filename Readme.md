@@ -1,22 +1,31 @@
 #How to build:-
+
 for building any of the problems, the following commands have to be written in the terminal
+
 g++ main.cpp
+
 ./a.out
 
 ##Problems explanation and goal:-
+
 problem 1:-
+
 Problem 1 is like n attendance checking system in which there is 256 students and there is 8 classrooms each have 256 chairs. Each student sets on the chair of his id and no one else can set on his chair.
 The goal of this problem is to use memory wisely and choose the perfect data types that would use less memory.
 
 Problem 2:-
-Problem  2 is an inventory check system. This inventory has up to 256 products each product can have 8 colors. Each product can have up to 256 items of that color.
+
+Problem  2 is an inventory check system. This inventory has up to 256 products each product can have 8 colors. Each product 
+can have up to 256 items of that color.
 The goal of this problem is also to manage the use of memory and choose the perfect data types.
 
 Problem 3:-
+
 Problem 3 is a maximum heap data structure in which the operators of addition and assignment and indexing can be performed upon.
 The goal of this problem is to use operators overloading and how to handle the increase of memory cases and allocating new memory in case of exceeding memry limits.
 
 ###Design decisions:-
+
 =>For problem 1 :-
 The data types chosen to represent the data of the student or the seat number is uint8_t as this data type uses only 1 byte and not like the normal int data type that uses 4 bytes which will reduce the memory used as there is no need for more than 8 bits as the range of any of the values is from 0 to 255 which means that only 8 bits is sufficient for representing these data.
 The problem was designed to be in two classes to avoid the usage of two dimensional array that will consume so much memory when creating a 256 instances of the classes.
